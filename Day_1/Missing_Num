@@ -1,0 +1,18 @@
+//Find the missing Number
+let arr=[];
+let n=Number(prompt("Enter the value of N:"));
+for(let i=0;i<n;i++){
+        arr[i]=Number(prompt("Enter the elements of the array:"));
+}
+let missing=function find(arr){
+    
+        let expected=0;
+        let actual=0;
+        for(let i=0;i<arr.length;i++){
+                actual+=arr[i];
+        }
+        expected=n*(n+1)/2;
+        return expected-actual;
+}
+console.log(missing(arr));
+

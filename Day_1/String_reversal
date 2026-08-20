@@ -1,0 +1,12 @@
+let str1 = "Hello";
+let str_rev = "";
+
+function reverse() {
+    for (let i = str1.length - 1; i >= 0; i--) {
+        str_rev += str1[i];
+    }
+
+    return str_rev;
+}
+
+console.log("The reversed String is: " + reverse());
