@@ -1,0 +1,21 @@
+let str=prompt("Enter a sentence:")
+function largest(str){
+        let word='';
+        let largest="";
+        for(let i=0;i<str.length;i++){
+                if(str[i]!==" "){
+                        word=word+str[i];
+                }
+                else{
+                        if(word.length>largest.length){
+                                largest=word;
+                        }
+                        word='';
+                }
+        }
+        if(word.length>largest.length){
+                largest=word;
+        }
+return largest;
+}
+console.log(largest(str))
