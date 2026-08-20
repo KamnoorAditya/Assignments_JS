@@ -1,0 +1,10 @@
+let n=prompt("enter a number:");
+function is_even(){
+        if(n%2==0){
+                console.log("Even");
+        }
+        else{   
+                console.log("odd");
+}
+}
+is_even(n);
