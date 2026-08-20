@@ -1,0 +1,12 @@
+var n = Number(prompt("Enter a number:"));
+
+function rec_fact(n) {
+
+    if (n == 0 || n == 1) {
+        return 1;
+    }
+
+    return n * rec_fact(n - 1);
+}
+
+console.log(rec_fact(n));

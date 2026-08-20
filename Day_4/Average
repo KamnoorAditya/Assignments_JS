@@ -1,0 +1,14 @@
+let len = Number(prompt("Enter the size of the array:"));
+let arr = [];
+
+for (let i = 0; i < len; i++) {
+    arr[i] = Number(prompt("Enter the numbers:"));
+}
+
+let sum = 0;
+for (let i = 0; i < len; i++) {
+    sum += arr[i];
+}
+
+let average = len === 0 ? 0 : sum / len;
+console.log("Average:", average);
